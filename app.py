@@ -191,7 +191,7 @@ def delete(nid):
         cursor.execute('delete from userCalCount where cid=%s',[nid])
         mydb.commit()
         cursor.close()
-        flash('Notes Deleted.')
+        flash('Record Deleted.')
         return redirect(url_for('history'))
     else:
         return redirect(url_for('login'))
